@@ -1,0 +1,51 @@
+create table employee
+(id int primary key identity(1,1),
+empid int,
+FirstName varchar(255),
+LastName varchar(255),
+EmailId varchar(255),
+Password varchar(255),
+Gender varchar(8),
+Dob date,
+Department varchar(255),
+Address varchar(255),
+City varchar(255),
+Country varchar(255),
+PhoneNumber varchar(255),
+Status int,
+RegDate datetime)
+-----------------------------------
+create table AdminTbl
+(id int primary key identity(1,1),
+UserName varchar(255),
+Password varchar(255),
+UpdationDate varchar(255))
+-----------------------------------
+create table Department
+(id int primary key identity(1,1),
+DepartmentName varchar(255),
+DepartmentShortName varchar(255),
+DepartmentCode varchar(255),
+CreationDate datetime)
+-----------------------------------
+create table LeaveType_Tbl
+(id int primary key identity(1,1),
+LeaveType varchar(255),
+Description varchar(255),
+CreationDate datetime)
+-----------------------------------
+create table AllLeave_Tbl
+(id int primary key identity(1,1),
+LeaveType varchar(255),
+ToDate Date,
+FromDate Date,
+Description varchar(255),
+Postingdate varchar(255),
+AdminRemarks varchar(255),
+AdminRemarksDate Date,
+Status int,
+)
+
+
+
+
